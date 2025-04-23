@@ -2,15 +2,15 @@ window.onload = function() {
 	var game = new Phaser.Game(320, 480, Phaser.CANVAS);
 	var bird;
      // bird gravity, will make bird fall if you don't flap
-	var birdGravity = 1600;
+	var birdGravity = 1200;
      // horizontal bird speed
 	var birdSpeed = 250;
      // flap thrust
 	var birdFlapPower = 300;
      // milliseconds between the creation of two pipes
-	var pipeInterval = 1000;
+	var pipeInterval = 2000;
      // hole between pipes, in puxels
-	var pipeHole = 80;
+	var pipeHole = 100;
 	var pipeGroup;
 	var score=0;
 	var scoreText;
