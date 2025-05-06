@@ -161,7 +161,7 @@ body {
         font-size: 150%; /* Smaller font size for smaller screens */
     }
     #portitle {
-        font-size: 300%; /* Smaller font size for smaller screens */
+        font-size: 200%; /* Smaller font size for smaller screens */
     }
 }
 @media (max-width: 480px) {
