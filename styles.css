@@ -161,10 +161,10 @@ body {
         font-size: 150%; /* Smaller font size for smaller screens */
     }
     .portitle {
-        font-size: 200%; /* Smaller font size for smaller screens */
+        font-size: 300%; /* Smaller font size for smaller screens */
     }
     .porttitle2 {
-    font-size: 100%
+    font-size: 250%
     }
 }
 @media (max-width: 480px) {
