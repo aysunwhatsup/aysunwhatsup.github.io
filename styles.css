@@ -134,7 +134,7 @@ body {
     margin-bottom: 20px;
     text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
     .header-logo {
         width: 80px; /* Adjust logo size for smaller screens */
     }
