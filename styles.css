@@ -151,16 +151,16 @@ body {
     #title {
         font-size: 300%; /* Smaller font size for smaller screens */
     }
-    #portimages {
+    .portimages {
         width: 100%; /* Full width for smaller screens */
     }
     .article-text {
         font-size: 150%; /* Smaller font size for smaller screens */
     }
-    #porttext1 {
+    .porttext1 {
         font-size: 150%; /* Smaller font size for smaller screens */
     }
-    #portitle {
+    .portitle {
         font-size: 200%; /* Smaller font size for smaller screens */
     }
 }
