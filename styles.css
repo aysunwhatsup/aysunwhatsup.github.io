@@ -157,11 +157,14 @@ body {
     .article-text {
         font-size: 150%; /* Smaller font size for smaller screens */
     }
-    .porttext1 {
+    .porttext {
         font-size: 150%; /* Smaller font size for smaller screens */
     }
     .portitle {
         font-size: 200%; /* Smaller font size for smaller screens */
+    }
+    .porttitle2 {
+    font-size: 100%
     }
 }
 @media (max-width: 480px) {
