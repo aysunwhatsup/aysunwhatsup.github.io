@@ -54,6 +54,10 @@ rl() {
 	sed -i "${1}s|.*|${2}|" "$file"
 }
 
+cl() {
+	load
+ 	sed -n "${1}p" $file
+
 addaft() {
 	load 
 	sed -i "${1}a $2" "$file"
