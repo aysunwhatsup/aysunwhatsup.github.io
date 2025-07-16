@@ -57,6 +57,7 @@ rl() {
 cl() {
 	load
  	sed -n "${1}p" $file
+}
 
 addaft() {
 	load 
@@ -84,6 +85,9 @@ help() {
     echo "usage: m rl 4 'hello world!'"
     echo ""
     echo "check: outputs the file's contents."
+    echo ""
+    echo "cl: check a line."
+    echo "usage: cl 4"
     echo "" 
     echo "dl: deletes the last line."
     echo ""
