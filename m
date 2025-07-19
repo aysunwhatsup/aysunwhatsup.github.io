@@ -70,7 +70,7 @@ addaft() {
 }
 
 help() {
-    echo "welcome to M! this is a lightweight and easy to use text editor."
+    echo "welcome to M 2.4.1! this is a lightweight and easy to use text editor."
     echo "commands:"
     echo ""
     echo "def: defines a file path to save to."
