@@ -30,11 +30,16 @@ deldef() {
 }
 
 watch() {
-    trap 'tput cnorm; clear; exit' INT
+    trap 'tput cnorm; exit' INT
     tput civis
+    prev_hash=""
     while true; do
-        clear
-        cat -n "$1"
+        curr_hash=$(md5sum "$1")
+        if [[ "$curr_hash" != "$prev_hash" ]]; then
+            clear
+            cat -n "$1"
+            prev_hash="$curr_hash"
+        fi
         sleep 1
     done
 }
