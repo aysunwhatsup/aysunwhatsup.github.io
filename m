@@ -54,9 +54,14 @@ dsl() {
 	sed -i "${1}d" "$file"
 }
 
-rl() {
+rsl() {
 	load
 	sed -i "${1}s|.*|${2}|" "$file"
+}
+
+rl() {
+	load
+	sed -i "\$s|.*|$1|" "$file"
 }
 
 cl() {
@@ -70,7 +75,7 @@ addaft() {
 }
 
 help() {
-    echo "welcome to M 2.4.1! this is a lightweight and easy to use text editor."
+    echo "welcome to M 2.5.0! this is a lightweight and easy to use text editor."
     echo "commands:"
     echo ""
     echo "def: defines a file path to save to."
@@ -86,8 +91,11 @@ help() {
     echo "addaft: add a line after a selected line."
     echo "usage: m addaft 4 'hello world!'"
     echo ""
-    echo "rl: replace the text of the selected line."
-    echo "usage: m rl 4 'hello world!'"
+    echo "rl: replace the text of the last line."
+    echo "usage: rl 'hello world!'"
+    echo ""
+    echo "rsl: replace the text of the selected line."
+    echo "usage: m rsl 4 'hello world!'"
     echo ""
     echo "check: outputs the file's contents."
     echo ""
